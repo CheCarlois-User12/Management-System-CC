@@ -11,7 +11,7 @@ from PySide6.QtGui import QPixmap
 from Empleado import Empleado
 from EmpleadoDAO import EmpleadoDAO
 
-PHOTO_DIR = r'C:\Users\Carlos\Desktop\EmpleadosExoneracion\EmpleadosManagmentSystem'
+PHOTO_DIR = r'C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion\Imagenes'
 PHOTO_PATH_FILE = os.path.join(PHOTO_DIR, 'photo_paths.json')
 DEFAULT_PHOTO = os.path.join(PHOTO_DIR, 'desconocido.jpg')
 
@@ -47,8 +47,8 @@ class EmpleadoGUI(QWidget):
             ("EmpApellido2", "Apellido del Empleado 2", 30),
             ("EmpNombre1", "Nombre del Empleado 1", 30),
             ("EmpNombre2", "Nombre del Empleado 2", 30),
-            ("EmpEmail", "Email", 60),
-            ("EmpDireccion", "Dirección", 60),
+            ("EmpEmail", "Email", 30),
+            ("EmpDireccion", "Dirección", 30),
             ("EmpSueldo", "Sueldo", 10),
             ("EmpBanco", "Banco", 30),
             ("EmpCuenta", "Cuenta Bancaria", 20),

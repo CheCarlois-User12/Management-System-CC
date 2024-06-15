@@ -1,12 +1,14 @@
-from logger_base import log
 import mysql.connector
 from mysql.connector import pooling
-import sys
+from logger_base import log
+from cryptography.hazmat.primitives.asymmetric import padding
+from cryptography.hazmat.primitives import hashes
+import base64
+import json
+from RSAProteccion import RSAProteccion
 
 class Conexion:
     _DATABASE = 'modeloComercial'
-    _USERNAME = 'root'
-    _PASSWORD = 'MariaDB123'
     _DB_PORT = '3307'
     _HOST = '127.0.0.1'
     _MIN_CON = 1
@@ -17,12 +19,19 @@ class Conexion:
     def obtenerPool(cls):
         if cls._pool is None:
             try:
+                config = cls.cargar_configuracion()
+                usuario = config['user']
+                clave = config['password']
+                rsa_proteccion = RSAProteccion()
+                rsa_proteccion.load_keys('private_key.pem', 'public_key.pem')
+                usuario = rsa_proteccion.decrypt(base64.b64decode(usuario))
+                clave = rsa_proteccion.decrypt(base64.b64decode(clave))
                 cls._pool = pooling.MySQLConnectionPool(
                     pool_name="mypool",
                     pool_size=cls._MAX_CON,
                     host=cls._HOST,
-                    user=cls._USERNAME,
-                    password=cls._PASSWORD,
+                    user=usuario,
+                    password=clave,
                     port=cls._DB_PORT,
                     database=cls._DATABASE
                 )
@@ -58,13 +67,19 @@ class Conexion:
             cls._pool.close()
             log.debug(f'Todas las conexiones del pool han sido cerradas')
 
-if __name__ == '__main__':
-    conexion1 = Conexion.obtenerConexion()
-    Conexion.liberarConexion(conexion1)
-    conexion2 = Conexion.obtenerConexion()
-    conexion3 = Conexion.obtenerConexion()
-    Conexion.liberarConexion(conexion3)
-    conexion4 = Conexion.obtenerConexion()
-    conexion5 = Conexion.obtenerConexion()
-    Conexion.liberarConexion(conexion5)
-    conexion6 = Conexion.obtenerConexion()
+    @classmethod
+    def cargar_configuracion(cls):
+        config_path = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\conexiones_base_datos.json'
+        try:
+            with open(config_path, 'r') as file:
+                return json.load(file)
+        except Exception as e:
+            log.error(f"Error al cargar configuración de la base de datos: {str(e)}")
+            return {}
+
+    @classmethod
+    def limpiar_configuracion(cls):
+        config_path = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\conexiones_base_datos.json'
+        with open(config_path, 'w') as file:
+            json.dump({}, file)
+            log.debug("Configuración de la base de datos limpiada")

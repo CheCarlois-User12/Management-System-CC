@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="iconos">
+    <file>iconos/cancel.png</file>
+    <file>iconos/enter.png</file>
+    <file>iconos/bill.png</file>
+    <file>iconos/customer.png</file>
+    <file>iconos/order.png</file>
+  </qresource>
+  <qresource prefix="imagenes"/>
+</RCC>
