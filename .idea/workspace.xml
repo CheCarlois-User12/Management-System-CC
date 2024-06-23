@@ -4,41 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9f8199de-2686-49b8-b761-f79fbf594ca0" name="Changes" comment="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/EmpleadosExoneracion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EmpleadosExoneracion.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Empleado.py" beforeDir="false" afterPath="$PROJECT_DIR$/Empleado.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpleadoDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpleadoDAO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EmpleadoGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpleadoGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FacturaMasterGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/FacturaMasterGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FacturasMasterForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/FacturasMasterForm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/Bonificacion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/BonificacionDAO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/BonificacionGUI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/Bonxdesxo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/BonxdesxoDAO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/BonxdesxoGUI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/__init__.py" beforeDir="false" />
+    <list default="true" id="9f8199de-2686-49b8-b761-f79fbf594ca0" name="Changes" comment="Se agregaron los siguientes cambios:&#10;** Modulo de Talento Humano mejorado&#10;** Interfaz mejorada - Stylesheets&#10;  - Interfaces dinamicas&#10;  - Interfaces intuitivas&#10;** Manejo de Nomina y Liquidaciones&#10;  - Nomina de empleados: codigo dinamico&#10;  - Liquidaciones: codigo dinamico&#10;      + Interfaz ergonima&#10;      + Calculos mediante Procedures&#10;** Manejo de errores mejorado V2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/capa_datos.log" beforeDir="false" afterPath="$PROJECT_DIR$/capa_datos.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conexion.py" beforeDir="false" afterPath="$PROJECT_DIR$/conexion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/descuentosPaquete/Descuento.py" beforeDir="false" afterPath="$PROJECT_DIR$/Descuento.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/descuentosPaquete/DescuentoDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/DescuentoDAO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/descuentosPaquete/DescuentoGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DescuentoGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/descuentosPaquete/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/detallePaquete/Detalle.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/detallePaquete/DetalleDAO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/detallePaquete/DetalleGUI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/detallePaquete/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/form_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/form_ui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/RolPagos.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/RolPagosDAO.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/RolPagosGUI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -297,6 +265,8 @@
       <workItem from="1718473911433" duration="78000" />
       <workItem from="1718974430357" duration="60000" />
       <workItem from="1718974498967" duration="2019000" />
+      <workItem from="1719122191671" duration="430000" />
+      <workItem from="1719122678189" duration="30000" />
     </task>
     <task id="LOCAL-00001" summary="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado">
       <option name="closed" value="true" />
@@ -306,7 +276,23 @@
       <option name="project" value="LOCAL" />
       <updated>1718473666905</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se agregaron los siguientes cambios:&#10;** Modulo de Talento Humano mejorado&#10;** Interfaz mejorada - Stylesheets&#10;  - Interfaces dinamicas&#10;  - Interfaces intuitivas&#10;** Manejo de Nomina y Liquidaciones&#10;  - Nomina de empleados: codigo dinamico&#10;  - Liquidaciones: codigo dinamico&#10;      + Interfaz ergonima&#10;      + Calculos mediante Procedures&#10;** Manejo de errores mejorado V2">
+      <option name="closed" value="true" />
+      <created>1719122378393</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1719122378393</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Se agregaron los siguientes cambios:&#10;** Modulo de Talento Humano mejorado&#10;** Interfaz mejorada - Stylesheets&#10;  - Interfaces dinamicas&#10;  - Interfaces intuitivas&#10;** Manejo de Nomina y Liquidaciones&#10;  - Nomina de empleados: codigo dinamico&#10;  - Liquidaciones: codigo dinamico&#10;      + Interfaz ergonima&#10;      + Calculos mediante Procedures&#10;** Manejo de errores mejorado V2">
+      <option name="closed" value="true" />
+      <created>1719122386430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1719122386430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +311,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado" />
+    <MESSAGE value="Se agregaron los siguientes cambios:&#10;** Modulo de Talento Humano mejorado&#10;** Interfaz mejorada - Stylesheets&#10;  - Interfaces dinamicas&#10;  - Interfaces intuitivas&#10;** Manejo de Nomina y Liquidaciones&#10;  - Nomina de empleados: codigo dinamico&#10;  - Liquidaciones: codigo dinamico&#10;      + Interfaz ergonima&#10;      + Calculos mediante Procedures&#10;** Manejo de errores mejorado V2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregaron los siguientes cambios:&#10;** Modulo de Talento Humano mejorado&#10;** Interfaz mejorada - Stylesheets&#10;  - Interfaces dinamicas&#10;  - Interfaces intuitivas&#10;** Manejo de Nomina y Liquidaciones&#10;  - Nomina de empleados: codigo dinamico&#10;  - Liquidaciones: codigo dinamico&#10;      + Interfaz ergonima&#10;      + Calculos mediante Procedures&#10;** Manejo de errores mejorado V2" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$ClienteGUI.coverage" NAME="ClienteGUI Coverage Results" MODIFIED="1718470081654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -338,7 +325,7 @@
     <SUITE FILE_PATH="coverage/EmpleadosExoneracion$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1717674591532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$conexion.coverage" NAME="conexion Coverage Results" MODIFIED="1718471928721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EmpleadosExoneracion$conexion.coverage" NAME="conexion Coverage Results" MODIFIED="1717618218972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1718979793866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1719122682218" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EmpleadosExoneracion$Empleado.coverage" NAME="Empleado Coverage Results" MODIFIED="1717600430491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$FacturaMasterGUI.coverage" NAME="FacturaMasterGUI Coverage Results" MODIFIED="1718470157982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$EmpleadoGUI.coverage" NAME="EmpleadoGUI Coverage Results" MODIFIED="1718469155355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

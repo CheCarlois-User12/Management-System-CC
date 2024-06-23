@@ -1187,3 +1187,191 @@
 09:23:58 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001AA96C41070>
 09:24:03 AM: DEBUG [conexion.py:87] Configuración de la base de datos limpiada
 09:24:04 AM: DEBUG [conexion.py:87] Configuración de la base de datos limpiada
+01:00:16 AM: DEBUG [conexion.py:40] Creación del pool exitosa: <mysql.connector.pooling.MySQLConnectionPool object at 0x0000020E6DFF6660>
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6E034200>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6E034080>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6E034080>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6E0341D0>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6E0341D0>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7BC0>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7BC0>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7D10>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7D10>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7D40>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7D40>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7D10>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7D10>
+01:00:16 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:16 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DF33830>
+01:00:16 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:16 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:16 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DF33830>
+01:00:17 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:17 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73287A40>
+01:00:17 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:17 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:17 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73287A40>
+01:00:17 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:17 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF6E40>
+01:00:17 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:17 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:17 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF6E40>
+01:00:18 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:18 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E735302F0>
+01:00:18 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:18 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:18 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E735302F0>
+01:00:18 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:18 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73530860>
+01:00:18 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:18 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:18 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73530860>
+01:00:18 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:18 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7C80>
+01:00:18 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:18 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:18 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7C80>
+01:00:18 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:18 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF6F30>
+01:00:18 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:18 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:18 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF6F30>
+01:00:18 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:18 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335FBC0>
+01:00:18 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:18 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:18 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335FBC0>
+01:00:19 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:19 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E71E69700>
+01:00:19 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:19 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:19 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E71E69700>
+01:00:19 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:19 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335FE30>
+01:00:19 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:19 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:19 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335FE30>
+01:00:19 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:19 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335F410>
+01:00:19 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:19 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:19 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335F410>
+01:00:19 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:19 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335FE30>
+01:00:19 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:19 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:19 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E7335FE30>
+01:00:20 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:20 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7500>
+01:00:20 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:20 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:20 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E6DFF7500>
+01:00:20 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:20 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73530EF0>
+01:00:20 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:20 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:20 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73530EF0>
+01:00:20 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:20 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73531FD0>
+01:00:20 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:20 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:20 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E73531FD0>
+01:00:20 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:20 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E735311C0>
+01:00:20 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:20 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:20 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E735311C0>
+01:00:20 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:00:20 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E71DE6300>
+01:00:20 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:00:20 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:00:20 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x0000020E71DE6300>
+01:01:03 AM: DEBUG [conexion.py:87] Configuración de la base de datos limpiada
+01:03:28 AM: DEBUG [conexion.py:40] Creación del pool exitosa: <mysql.connector.pooling.MySQLConnectionPool object at 0x000001F7E9F16660>
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F54200>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F54080>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F54080>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F541D0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F541D0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F17E30>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F17E30>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9E53830>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9E53830>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F161B0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F161B0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F161B0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F161B0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:28 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F160C0>
+01:03:28 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:28 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:28 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F160C0>
+01:03:30 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:30 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F16AE0>
+01:03:30 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:30 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:30 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F16AE0>
+01:03:30 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:30 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F17B00>
+01:03:30 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:30 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:30 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F17B00>
+01:03:30 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:30 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F17A40>
+01:03:30 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:30 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:30 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7E9F17A40>
+01:03:30 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:30 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7EB69FE30>
+01:03:30 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:30 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:30 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7EB69FE30>
+01:03:32 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:32 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7EB458830>
+01:03:32 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:32 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:32 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7EB458830>
+01:03:33 AM: DEBUG [cursor_del_pool.py:11] Incio del método with __enter__
+01:03:33 AM: DEBUG [conexion.py:52] Conexión obtenida del pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7EB69FE00>
+01:03:33 AM: DEBUG [cursor_del_pool.py:17] Se ejecuta método __exit__
+01:03:33 AM: DEBUG [cursor_del_pool.py:23] Commit de la transacción
+01:03:33 AM: DEBUG [conexion.py:62] Regresamos la conexión al pool: <mysql.connector.pooling.PooledMySQLConnection object at 0x000001F7EB69FE00>
+01:03:34 AM: DEBUG [conexion.py:87] Configuración de la base de datos limpiada
+01:03:34 AM: DEBUG [conexion.py:87] Configuración de la base de datos limpiada
+01:04:45 AM: DEBUG [conexion.py:87] Configuración de la base de datos limpiada
