@@ -1,5 +1,7 @@
+import datetime
 import sys
-from PySide6.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QPushButton, QMessageBox, QVBoxLayout, QHeaderView
+from PySide6.QtWidgets import QApplication, QMainWindow, QTableWidgetItem, QPushButton, QMessageBox, QVBoxLayout, \
+    QHeaderView, QTableWidget, QWidget
 from PySide6.QtCore import QDate, QTime, Qt
 from FacturasMasterForm import FacturasMasterForm
 from ProductosDetails import ProductosDetails
@@ -7,7 +9,7 @@ from ProductoDAO import ProductoDAO
 from ClienteDAO import ClienteDAO
 from FacturaDAO import FacturaDAO
 from Factura import Factura
-import re  # Importar el módulo de expresiones regulares para validar el código de factura
+import re
 
 class FacturasMasterGUI(QMainWindow):
     def __init__(self):
@@ -22,13 +24,13 @@ class FacturasMasterGUI(QMainWindow):
         self.ui.boton_GenerarFact_Fact.clicked.connect(self.generar_factura)
         self.ui.boton_Cancelar_Fact.clicked.connect(self.cancelar_factura)
         self.ui.boton_BuscarCodigo_Cli.clicked.connect(self.search_client)
+        self.ui.boton_VisualizarFact_Fact.clicked.connect(self.visualizar_facturas)  # Conectar el nuevo botón
         self.load_product_codes()
         self.load_forma_pago_options()
         self.load_cliente_codes()
         self.load_iva_options()
         self.product_details = []
 
-        # Configuración de la tabla
         self.setup_table()
 
     def setup_table(self):
@@ -165,14 +167,13 @@ class FacturasMasterGUI(QMainWindow):
         try:
             cliente_codigo = self.ui.cBox_CodigoClientes_Cli.currentText()
             fecha = self.ui.dateEdit_Fecha_Fact.date().toString("yyyy-MM-dd")
-            hora = QTime.currentTime().toString()  # Use current time
+            hora = QTime.currentTime().toString()
             codigo_factura = self.ui.lineEdit_CodigoFact_Fact.text()
             forma_pago = self.ui.cBox_FormaPago_Fact.currentText()
 
             if not re.match(r"^FAC-\d{5}$", codigo_factura):
                 raise ValueError("El código de la factura debe tener el formato 'FAC-#####'.")
 
-            # Validar que la fecha no sea mayor a la fecha actual
             if QDate.fromString(fecha, "yyyy-MM-dd") > QDate.currentDate():
                 raise ValueError("La fecha de la factura no puede ser mayor a la fecha actual.")
 
@@ -212,6 +213,57 @@ class FacturasMasterGUI(QMainWindow):
         self.ui.lineEdit_Total_Fact.clear()
         self.ui.dateEdit_Fecha_Fact.setDate(QDate.currentDate())
 
+    def visualizar_facturas(self):
+        self.visualizar_facturas_window = VisualizarFacturasWindow()
+        self.visualizar_facturas_window.show()
+
+class VisualizarFacturasWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        self.setWindowTitle("Visualizar Facturas")
+        self.setGeometry(100, 100, 800, 600)
+        self.initUI()
+
+    def initUI(self):
+        central_widget = QWidget(self)
+        self.setCentralWidget(central_widget)
+        layout = QVBoxLayout(central_widget)
+
+        self.tableWidget = QTableWidget()
+        self.tableWidget.setColumnCount(8)
+        self.tableWidget.setHorizontalHeaderLabels([
+            "Código", "Cliente", "Fecha", "Hora",
+            "Subtotal", "Descuento", "IVA", "Total"
+        ])
+        self.tableWidget.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
+        layout.addWidget(self.tableWidget)
+
+        self.load_facturas()
+
+    def load_facturas(self):
+        facturas = FacturaDAO.seleccionar()  # Asegúrate de que este método existe en FacturaDAO
+        self.tableWidget.setRowCount(len(facturas))
+        for row, factura in enumerate(facturas):
+            self.tableWidget.setItem(row, 0, QTableWidgetItem(factura.facCodigo))
+            self.tableWidget.setItem(row, 1, QTableWidgetItem(factura.cliCodigo))
+            self.tableWidget.setItem(row, 2, QTableWidgetItem(str(factura.facFecha)))  # Convertir fecha a cadena
+            self.tableWidget.setItem(row, 3, QTableWidgetItem(self.format_time(factura.facHora)))  # Convertir hora a cadena
+            self.tableWidget.setItem(row, 4, QTableWidgetItem(str(factura.facSubtotal)))
+            self.tableWidget.setItem(row, 5, QTableWidgetItem(str(factura.facDescuento)))
+            self.tableWidget.setItem(row, 6, QTableWidgetItem(str(factura.facIva)))
+            self.tableWidget.setItem(row, 7, QTableWidgetItem(str(factura.facTotal)))
+
+    def format_time(self, time_value):
+        """Formato de la hora para manejar diferentes tipos de valores de tiempo."""
+        if isinstance(time_value, (datetime.time, datetime.datetime)):
+            return time_value.strftime("%H:%M:%S")
+        elif isinstance(time_value, datetime.timedelta):
+            total_seconds = int(time_value.total_seconds())
+            hours, remainder = divmod(total_seconds, 3600)
+            minutes, seconds = divmod(remainder, 60)
+            return f"{hours:02}:{minutes:02}:{seconds:02}"
+        else:
+            return str(time_value)
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = FacturasMasterGUI()

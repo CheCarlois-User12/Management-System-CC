@@ -8,7 +8,7 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QApplication, QComboBox, QDateEdit, QFormLayout,
     QFrame, QGridLayout, QHBoxLayout, QLabel,
     QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget)
+    QWidget, QTableWidget, QTableWidgetItem, QVBoxLayout, QHeaderView)
 
 class FacturasMasterForm(object):
     def setupUi(self, MainWindow):
@@ -83,14 +83,9 @@ class FacturasMasterForm(object):
 "}")
         self.frame_tabla_1_1_PDetail.setFrameShape(QFrame.StyledPanel)
         self.frame_tabla_1_1_PDetail.setFrameShadow(QFrame.Raised)
-
-        # Añadir la tabla
         self.tableWidget = QTableWidget(self.frame_tabla_1_1_PDetail)
         self.tableWidget.setGeometry(QRect(10, 10, 800, 290))
         self.tableWidget.setObjectName(u"tableWidget")
-        self.tableWidget.setColumnCount(12)
-        self.tableWidget.setHorizontalHeaderLabels(["Código", "Descripción", "Unidad de Medida", "Valor Unitario", "Cantidad", "Descuento", "Subtotal", "Desc. Subtotal", "IVA", "IVA Subtotal", "Editar", "Eliminar"])
-
         self.frame_tabla_1_0_PDetail = QFrame(self.fVTablasVentas_1)
         self.frame_tabla_1_0_PDetail.setObjectName(u"frame_tabla_1_0_PDetail")
         self.frame_tabla_1_0_PDetail.setGeometry(QRect(20, 150, 371, 311))
@@ -341,12 +336,27 @@ class FacturasMasterForm(object):
 "}")
         self.frame_tabla_2_0_Fact.setFrameShape(QFrame.StyledPanel)
         self.frame_tabla_2_0_Fact.setFrameShadow(QFrame.Raised)
-        self.boton_GenerarFact_Fact = QPushButton(self.frame_tabla_2_0_Fact)
-        self.boton_GenerarFact_Fact.setObjectName(u"boton_GenerarFact_Fact")
-        self.boton_GenerarFact_Fact.setGeometry(QRect(20, 20, 141, 29))
-        self.boton_Cancelar_Fact = QPushButton(self.frame_tabla_2_0_Fact)
+        self.gridLayoutWidget_5 = QWidget(self.frame_tabla_2_0_Fact)
+        self.gridLayoutWidget_5.setObjectName(u"gridLayoutWidget_5")
+        self.gridLayoutWidget_5.setGeometry(QRect(30, 30, 312, 81))
+        self.gL_organizador_Fact = QGridLayout(self.gridLayoutWidget_5)
+        self.gL_organizador_Fact.setObjectName(u"gL_organizador_Fact")
+        self.gL_organizador_Fact.setContentsMargins(0, 0, 0, 0)
+        self.boton_Cancelar_Fact = QPushButton(self.gridLayoutWidget_5)
         self.boton_Cancelar_Fact.setObjectName(u"boton_Cancelar_Fact")
-        self.boton_Cancelar_Fact.setGeometry(QRect(180, 20, 151, 29))
+
+        self.gL_organizador_Fact.addWidget(self.boton_Cancelar_Fact, 0, 1, 1, 1)
+
+        self.boton_GenerarFact_Fact = QPushButton(self.gridLayoutWidget_5)
+        self.boton_GenerarFact_Fact.setObjectName(u"boton_GenerarFact_Fact")
+
+        self.gL_organizador_Fact.addWidget(self.boton_GenerarFact_Fact, 0, 0, 1, 1)
+
+        self.boton_VisualizarFact_Fact = QPushButton(self.gridLayoutWidget_5)
+        self.boton_VisualizarFact_Fact.setObjectName(u"boton_VisualizarFact_Fact")
+
+        self.gL_organizador_Fact.addWidget(self.boton_VisualizarFact_Fact, 1, 0, 1, 2)
+
         self.frame_tabla_2_1_Fact = QFrame(self.fVTablasVentas_1)
         self.frame_tabla_2_1_Fact.setObjectName(u"frame_tabla_2_1_Fact")
         self.frame_tabla_2_1_Fact.setGeometry(QRect(400, 470, 821, 141))
@@ -368,7 +378,7 @@ class FacturasMasterForm(object):
         self.frame_tabla_2_1_Fact.setFrameShadow(QFrame.Raised)
         self.gridLayoutWidget_4 = QWidget(self.frame_tabla_2_1_Fact)
         self.gridLayoutWidget_4.setObjectName(u"gridLayoutWidget_4")
-        self.gridLayoutWidget_4.setGeometry(QRect(350, 0, 461, 131))
+        self.gridLayoutWidget_4.setGeometry(QRect(350, 0, 461, 137))
         self.gL_organizador_Fact_1 = QGridLayout(self.gridLayoutWidget_4)
         self.gL_organizador_Fact_1.setObjectName(u"gL_organizador_Fact_1")
         self.gL_organizador_Fact_1.setContentsMargins(0, 0, 0, 0)
@@ -464,8 +474,9 @@ class FacturasMasterForm(object):
         self.label_HoraFact_Fact.setText(QCoreApplication.translate("MainWindow", u"HORA", None))
         self.label_NombreCli_Fact.setText(QCoreApplication.translate("MainWindow", u"CLIENTE", None))
         self.label_CodigoFact_Fact.setText(QCoreApplication.translate("MainWindow", u"CODIGO FACTURA", None))
-        self.boton_GenerarFact_Fact.setText(QCoreApplication.translate("MainWindow", u"GENERAR FACTURA", None))
         self.boton_Cancelar_Fact.setText(QCoreApplication.translate("MainWindow", u"CANCELAR FACTURA", None))
+        self.boton_GenerarFact_Fact.setText(QCoreApplication.translate("MainWindow", u"GENERAR FACTURA", None))
+        self.boton_VisualizarFact_Fact.setText(QCoreApplication.translate("MainWindow", u"VISUALIZAR FACTURAS", None))
         self.label_FormaPago_Fact.setText(QCoreApplication.translate("MainWindow", u"FORMA PAGO", None))
         self.label_SubTotal_Fact.setText(QCoreApplication.translate("MainWindow", u"SUB TOTAL", None))
         self.label_TotalIva_Fact.setText(QCoreApplication.translate("MainWindow", u"TOTAL IVA", None))

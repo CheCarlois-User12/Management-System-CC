@@ -1,9 +1,13 @@
 import sys
 import functools
 from PySide6.QtWidgets import (QApplication, QWidget, QFormLayout, QLineEdit, QPushButton,
-                               QVBoxLayout, QMessageBox, QTableWidget, QTableWidgetItem, QHeaderView)
-from descuentosPaquete.Descuento import Descuento
-from descuentosPaquete.DescuentoDAO import DescuentoDAO
+                               QVBoxLayout, QHBoxLayout, QMessageBox, QTableWidget, QTableWidgetItem, QHeaderView, QLabel)
+from Descuento import Descuento
+from DescuentoDAO import DescuentoDAO
+from PySide6.QtGui import QIcon
+
+PENCIL_ICON_PATH = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\Imagenes\iconos\pencil.png'
+CANCEL_ICON_PATH = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\Imagenes\iconos\cancel.png'
 
 class DescuentoGUI(QWidget):
     def __init__(self):
@@ -12,7 +16,7 @@ class DescuentoGUI(QWidget):
         self.setWindowTitle("CRUD DESCUENTOS")
         self.main_layout = QVBoxLayout()
         self.form_layout = QFormLayout()
-        self.button_layout = QVBoxLayout()
+        self.button_layout = QHBoxLayout()
         self.table_layout = QVBoxLayout()
 
         self.entries = {}
@@ -64,9 +68,8 @@ class DescuentoGUI(QWidget):
         self.table_layout.addWidget(self.table)
 
     def limpiar_campos(self):
-        self.entries["DesCodigo"].clear()
-        self.entries["DesDescripcion"].clear()
-        self.entries["DesValor"].clear()
+        for entry in self.entries.values():
+            entry.clear()
 
     def actualizar_campos_descuento(self, descuento):
         self.entries["DesCodigo"].setText(descuento.des_codigo)
@@ -119,11 +122,13 @@ class DescuentoGUI(QWidget):
             self.table.setItem(row, 1, QTableWidgetItem(descuento.des_descripcion))
             self.table.setItem(row, 2, QTableWidgetItem(str(descuento.des_valor)))
 
-            edit_button = QPushButton("Editar")
+            edit_button = QPushButton()
+            edit_button.setIcon(QIcon(PENCIL_ICON_PATH))
             edit_button.clicked.connect(functools.partial(self.editar_descuento, row))
             self.table.setCellWidget(row, 3, edit_button)
 
-            delete_button = QPushButton("Eliminar")
+            delete_button = QPushButton()
+            delete_button.setIcon(QIcon(CANCEL_ICON_PATH))
             delete_button.clicked.connect(functools.partial(self.eliminar_descuento_desde_tabla, row))
             self.table.setCellWidget(row, 4, delete_button)
 

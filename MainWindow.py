@@ -2,18 +2,16 @@ import sys
 import json
 import base64
 
-import mysql
+import mysql.connector
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QVBoxLayout, QLineEdit
 from PySide6.QtGui import QIcon
+from BonificacionGUI import BonificacionGUI
 from EmpleadoGUI import EmpleadoGUI
-from bonificacionPaquete.BonificacionGUI import BonificacionGUI
-from descuentosPaquete.DescuentoGUI import DescuentoGUI
-from detallePaquete.DetalleGUI import DetalleGUI
-from bonxdesxoPaquete.BonxdesxoGUI import BonxdesxoGUI
-from rolPagosPaquete.RolPagosGUI import RolPagosGUI
+from DescuentoGUI import DescuentoGUI
 from ClienteGUI import ClienteGUI
 from ProductoGUI import ProductoGUI
 from FacturaMasterGUI import FacturasMasterGUI
+from NominaGUI import NominaGUI  # Importa la clase NominaGUI
 from form_ui import Ui_MainWindow
 from conexion import Conexion
 from RSAProteccion import RSAProteccion
@@ -35,6 +33,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.fVTablasVentas_1.setLayout(QVBoxLayout())
         self.entryClave_1.setEchoMode(QLineEdit.Password)
 
+        # Asegurarse de que los campos de texto estén habilitados
+        self.entryUsuario_1.setEnabled(True)
+        self.entryClave_1.setEnabled(True)
+
         self.rsa_proteccion = RSAProteccion()
         self.rsa_proteccion.load_keys('private_key.pem', 'public_key.pem')
 
@@ -42,9 +44,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         self.botonEmpleados.clicked.connect(self.show_empleados)
         self.botonBonificaciones.clicked.connect(self.show_bonificaciones)
         self.botonDescuentos.clicked.connect(self.show_descuentos)
-        self.botonDetalle.clicked.connect(self.show_detalle)
-        self.botonRolPagos.clicked.connect(self.show_rolpagos)
-        self.botonBonxDes.clicked.connect(self.show_bonxdes)
+        self.botonNomina.clicked.connect(self.show_rolpagos)  # Conectar el botón a la función show_rolpagos
         self.botonIniciarSesion_1.clicked.connect(self.login)
         self.botonCerrarSesion_1.clicked.connect(self.logout)
         self.botonClientes.clicked.connect(self.show_clientes)
@@ -145,23 +145,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.descuento_gui = DescuentoGUI()
             self.fVTablasTalentoHumano_1.layout().addWidget(self.descuento_gui)
 
-    def show_detalle(self):
-        if self.is_logged_in:
-            self.clear_frameVisualizarTablas(self.fVTablasTalentoHumano_1)
-            self.detalle_gui = DetalleGUI()
-            self.fVTablasTalentoHumano_1.layout().addWidget(self.detalle_gui)
-
     def show_rolpagos(self):
         if self.is_logged_in:
             self.clear_frameVisualizarTablas(self.fVTablasTalentoHumano_1)
-            self.rolpagos_gui = RolPagosGUI()
-            self.fVTablasTalentoHumano_1.layout().addWidget(self.rolpagos_gui)
-
-    def show_bonxdes(self):
-        if self.is_logged_in:
-            self.clear_frameVisualizarTablas(self.fVTablasTalentoHumano_1)
-            self.bonxdes_gui = BonxdesxoGUI()
-            self.fVTablasTalentoHumano_1.layout().addWidget(self.bonxdes_gui)
+            self.nomina_gui = NominaGUI()
+            self.fVTablasTalentoHumano_1.layout().addWidget(self.nomina_gui)
 
     def show_clientes(self):
         if self.is_logged_in:
@@ -186,9 +174,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.empleado_gui = EmpleadoGUI()
             self.bonificacion_gui = BonificacionGUI()
             self.descuento_gui = DescuentoGUI()
-            self.detalle_gui = DetalleGUI()
-            self.bonxdes_gui = BonxdesxoGUI()
-            self.rolpagos_gui = RolPagosGUI()
             self.cliente_gui = ClienteGUI()
             self.producto_gui = ProductoGUI()
             self.factxdetails_gui = FacturasMasterGUI()
@@ -200,9 +185,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.empleado_gui = EmpleadoGUI()
             self.bonificacion_gui = BonificacionGUI()
             self.descuento_gui = DescuentoGUI()
-            self.detalle_gui = DetalleGUI()
-            self.bonxdes_gui = BonxdesxoGUI()
-            self.rolpagos_gui = RolPagosGUI()
+            self.nomina_gui = NominaGUI()
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)

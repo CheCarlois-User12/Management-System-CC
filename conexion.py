@@ -1,3 +1,5 @@
+import sys
+
 import mysql.connector
 from mysql.connector import pooling
 from logger_base import log

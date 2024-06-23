@@ -1,20 +1,21 @@
-
-# empleado.py
 class Empleado:
     def __init__(self, emp_codigo=None, emp_apellido1=None, emp_apellido2=None, emp_nombre1=None, emp_nombre2=None,
-                 emp_fecha_nacimiento=None, emp_sexo=None, emp_email=None, emp_direccion=None, emp_tipo_sangre=None,
-                 emp_sueldo=None, emp_banco=None, emp_cuenta=None, emp_status=None):
+                 emp_identificacion=None, emp_fecha_nacimiento=None, emp_tipo_sangre=None, emp_sexo=None,
+                 emp_cargo=None, emp_email=None, emp_direccion=None, emp_sueldo=None, emp_banco=None,
+                 emp_cuenta=None, emp_status=None):
 
         self._emp_codigo = emp_codigo
         self._emp_apellido1 = emp_apellido1
         self._emp_apellido2 = emp_apellido2
         self._emp_nombre1 = emp_nombre1
         self._emp_nombre2 = emp_nombre2
+        self._emp_identificacion = emp_identificacion
         self._emp_fecha_nacimiento = emp_fecha_nacimiento
+        self._emp_tipo_sangre = emp_tipo_sangre
         self._emp_sexo = emp_sexo
+        self._emp_cargo = emp_cargo
         self._emp_email = emp_email
         self._emp_direccion = emp_direccion
-        self._emp_tipo_sangre = emp_tipo_sangre
         self._emp_sueldo = emp_sueldo
         self._emp_banco = emp_banco
         self._emp_cuenta = emp_cuenta
@@ -24,12 +25,14 @@ class Empleado:
         return f'''
             Código: {self._emp_codigo}, Apellido1: {self._emp_apellido1},
             Apellido2: {self._emp_apellido2}, Nombre1: {self._emp_nombre1},
-            Nombre2: {self._emp_nombre2}, Fecha de Nacimiento: {self._emp_fecha_nacimiento},
-            Sexo: {self._emp_sexo}, Email: {self._emp_email}, Dirección: {self._emp_direccion},
-            Tipo de Sangre: {self._emp_tipo_sangre}, Sueldo: {self._emp_sueldo}, Banco: {self._emp_banco},
+            Nombre2: {self._emp_nombre2}, Identificación: {self._emp_identificacion},
+            Fecha de Nacimiento: {self._emp_fecha_nacimiento}, Tipo de Sangre: {self._emp_tipo_sangre},
+            Sexo: {self._emp_sexo}, Cargo: {self._emp_cargo}, Email: {self._emp_email},
+            Dirección: {self._emp_direccion}, Sueldo: {self._emp_sueldo}, Banco: {self._emp_banco},
             Cuenta Bancaria: {self._emp_cuenta}, Estado: {self._emp_status}
         '''
 
+    # Getters and Setters
     @property
     def emp_codigo(self):
         return self._emp_codigo
@@ -71,6 +74,14 @@ class Empleado:
         self._emp_nombre2 = emp_nombre2
 
     @property
+    def emp_identificacion(self):
+        return self._emp_identificacion
+
+    @emp_identificacion.setter
+    def emp_identificacion(self, emp_identificacion):
+        self._emp_identificacion = emp_identificacion
+
+    @property
     def emp_fecha_nacimiento(self):
         return self._emp_fecha_nacimiento
 
@@ -79,12 +90,28 @@ class Empleado:
         self._emp_fecha_nacimiento = emp_fecha_nacimiento
 
     @property
+    def emp_tipo_sangre(self):
+        return self._emp_tipo_sangre
+
+    @emp_tipo_sangre.setter
+    def emp_tipo_sangre(self, emp_tipo_sangre):
+        self._emp_tipo_sangre = emp_tipo_sangre
+
+    @property
     def emp_sexo(self):
         return self._emp_sexo
 
     @emp_sexo.setter
     def emp_sexo(self, emp_sexo):
         self._emp_sexo = emp_sexo
+
+    @property
+    def emp_cargo(self):
+        return self._emp_cargo
+
+    @emp_cargo.setter
+    def emp_cargo(self, emp_cargo):
+        self._emp_cargo = emp_cargo
 
     @property
     def emp_email(self):
@@ -101,14 +128,6 @@ class Empleado:
     @emp_direccion.setter
     def emp_direccion(self, emp_direccion):
         self._emp_direccion = emp_direccion
-
-    @property
-    def emp_tipo_sangre(self):
-        return self._emp_tipo_sangre
-
-    @emp_tipo_sangre.setter
-    def emp_tipo_sangre(self, emp_tipo_sangre):
-        self._emp_tipo_sangre = emp_tipo_sangre
 
     @property
     def emp_sueldo(self):
@@ -141,8 +160,3 @@ class Empleado:
     @emp_status.setter
     def emp_status(self, emp_status):
         self._emp_status = emp_status
-
-# empleado_dao.py
-from logger_base import log
-from cursor_del_pool import CursorDelPool
-from Empleado import Empleado

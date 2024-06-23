@@ -1,21 +1,24 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'form.ui'
+## Form generated from reading UI file 'form_Actual.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.1
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
 
-from PySide6.QtCore import (QCoreApplication, QMetaObject, QRect,
-                            QSize, Qt)
-from PySide6.QtGui import (QBrush, QColor, QIcon,
-                           QPalette)
-from PySide6.QtWidgets import (QFrame, QGridLayout, QHBoxLayout,
-                               QLabel, QLineEdit, QPushButton,
-                               QSizePolicy, QSpacerItem, QTabWidget, QVBoxLayout,
-                               QWidget)
+from PySide6.QtCore import (QCoreApplication, QDate, QDateTime, QLocale,
+    QMetaObject, QObject, QPoint, QRect,
+    QSize, QTime, QUrl, Qt)
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+    QFont, QFontDatabase, QGradient, QIcon,
+    QImage, QKeySequence, QLinearGradient, QPainter,
+    QPalette, QPixmap, QRadialGradient, QTransform)
+from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
+    QLabel, QLineEdit, QMainWindow, QPushButton,
+    QSizePolicy, QSpacerItem, QTabWidget, QVBoxLayout,
+    QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -235,18 +238,58 @@ class Ui_MainWindow(object):
         self.fBTalentoHumano_1.setFrameShadow(QFrame.Raised)
         self.gridLayout_4 = QGridLayout(self.fBTalentoHumano_1)
         self.gridLayout_4.setObjectName(u"gridLayout_4")
-        self.botonDetalle = QPushButton(self.fBTalentoHumano_1)
-        self.botonDetalle.setObjectName(u"botonDetalle")
-        sizePolicy2.setHeightForWidth(self.botonDetalle.sizePolicy().hasHeightForWidth())
-        self.botonDetalle.setSizePolicy(sizePolicy2)
-        self.botonDetalle.setMinimumSize(QSize(156, 0))
+        self.botonNomina = QPushButton(self.fBTalentoHumano_1)
+        self.botonNomina.setObjectName(u"botonNomina")
+        sizePolicy2.setHeightForWidth(self.botonNomina.sizePolicy().hasHeightForWidth())
+        self.botonNomina.setSizePolicy(sizePolicy2)
+        self.botonNomina.setMinimumSize(QSize(156, 0))
         icon = QIcon()
-        icon.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/file.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonDetalle.setIcon(icon)
-        self.botonDetalle.setCheckable(False)
-        self.botonDetalle.setAutoExclusive(False)
+        icon.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/box.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonNomina.setIcon(icon)
+        self.botonNomina.setCheckable(False)
+        self.botonNomina.setAutoExclusive(False)
 
-        self.gridLayout_4.addWidget(self.botonDetalle, 3, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.botonNomina, 4, 0, 1, 1)
+
+        self.botonBonificaciones = QPushButton(self.fBTalentoHumano_1)
+        self.botonBonificaciones.setObjectName(u"botonBonificaciones")
+        sizePolicy2.setHeightForWidth(self.botonBonificaciones.sizePolicy().hasHeightForWidth())
+        self.botonBonificaciones.setSizePolicy(sizePolicy2)
+        self.botonBonificaciones.setMinimumSize(QSize(156, 0))
+        icon1 = QIcon()
+        icon1.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/save-money.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonBonificaciones.setIcon(icon1)
+        self.botonBonificaciones.setCheckable(False)
+        self.botonBonificaciones.setAutoExclusive(False)
+
+        self.gridLayout_4.addWidget(self.botonBonificaciones, 3, 0, 1, 1)
+
+        self.botonEmpleados = QPushButton(self.fBTalentoHumano_1)
+        self.botonEmpleados.setObjectName(u"botonEmpleados")
+        sizePolicy2.setHeightForWidth(self.botonEmpleados.sizePolicy().hasHeightForWidth())
+        self.botonEmpleados.setSizePolicy(sizePolicy2)
+        self.botonEmpleados.setMinimumSize(QSize(156, 0))
+        icon2 = QIcon()
+        icon2.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/customer.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonEmpleados.setIcon(icon2)
+        self.botonEmpleados.setCheckable(False)
+        self.botonEmpleados.setChecked(False)
+        self.botonEmpleados.setAutoExclusive(False)
+
+        self.gridLayout_4.addWidget(self.botonEmpleados, 0, 0, 1, 1)
+
+        self.botonDescuentos = QPushButton(self.fBTalentoHumano_1)
+        self.botonDescuentos.setObjectName(u"botonDescuentos")
+        sizePolicy2.setHeightForWidth(self.botonDescuentos.sizePolicy().hasHeightForWidth())
+        self.botonDescuentos.setSizePolicy(sizePolicy2)
+        self.botonDescuentos.setMinimumSize(QSize(156, 0))
+        icon3 = QIcon()
+        icon3.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/income.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonDescuentos.setIcon(icon3)
+        self.botonDescuentos.setCheckable(False)
+        self.botonDescuentos.setAutoExclusive(False)
+
+        self.gridLayout_4.addWidget(self.botonDescuentos, 1, 0, 1, 1)
 
         self.frame_2 = QFrame(self.fBTalentoHumano_1)
         self.frame_2.setObjectName(u"frame_2")
@@ -256,73 +299,7 @@ class Ui_MainWindow(object):
         self.frame_2.setFrameShape(QFrame.StyledPanel)
         self.frame_2.setFrameShadow(QFrame.Raised)
 
-        self.gridLayout_4.addWidget(self.frame_2, 6, 0, 1, 1)
-
-        self.botonBonxDes = QPushButton(self.fBTalentoHumano_1)
-        self.botonBonxDes.setObjectName(u"botonBonxDes")
-        sizePolicy2.setHeightForWidth(self.botonBonxDes.sizePolicy().hasHeightForWidth())
-        self.botonBonxDes.setSizePolicy(sizePolicy2)
-        self.botonBonxDes.setMinimumSize(QSize(156, 45))
-        icon1 = QIcon()
-        icon1.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/menu.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonBonxDes.setIcon(icon1)
-        self.botonBonxDes.setCheckable(False)
-        self.botonBonxDes.setAutoExclusive(False)
-
-        self.gridLayout_4.addWidget(self.botonBonxDes, 2, 0, 1, 1)
-
-        self.botonRolPagos = QPushButton(self.fBTalentoHumano_1)
-        self.botonRolPagos.setObjectName(u"botonRolPagos")
-        sizePolicy2.setHeightForWidth(self.botonRolPagos.sizePolicy().hasHeightForWidth())
-        self.botonRolPagos.setSizePolicy(sizePolicy2)
-        self.botonRolPagos.setMinimumSize(QSize(156, 0))
-        icon2 = QIcon()
-        icon2.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/box.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonRolPagos.setIcon(icon2)
-        self.botonRolPagos.setCheckable(False)
-        self.botonRolPagos.setAutoExclusive(False)
-
-        self.gridLayout_4.addWidget(self.botonRolPagos, 5, 0, 1, 1)
-
-        self.botonEmpleados = QPushButton(self.fBTalentoHumano_1)
-        self.botonEmpleados.setObjectName(u"botonEmpleados")
-        sizePolicy2.setHeightForWidth(self.botonEmpleados.sizePolicy().hasHeightForWidth())
-        self.botonEmpleados.setSizePolicy(sizePolicy2)
-        self.botonEmpleados.setMinimumSize(QSize(156, 0))
-        icon3 = QIcon()
-        icon3.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/customer.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonEmpleados.setIcon(icon3)
-        self.botonEmpleados.setCheckable(False)
-        self.botonEmpleados.setChecked(False)
-        self.botonEmpleados.setAutoExclusive(False)
-
-        self.gridLayout_4.addWidget(self.botonEmpleados, 1, 0, 1, 1)
-
-        self.botonBonificaciones = QPushButton(self.fBTalentoHumano_1)
-        self.botonBonificaciones.setObjectName(u"botonBonificaciones")
-        sizePolicy2.setHeightForWidth(self.botonBonificaciones.sizePolicy().hasHeightForWidth())
-        self.botonBonificaciones.setSizePolicy(sizePolicy2)
-        self.botonBonificaciones.setMinimumSize(QSize(156, 0))
-        icon4 = QIcon()
-        icon4.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/save-money.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonBonificaciones.setIcon(icon4)
-        self.botonBonificaciones.setCheckable(False)
-        self.botonBonificaciones.setAutoExclusive(False)
-
-        self.gridLayout_4.addWidget(self.botonBonificaciones, 4, 0, 1, 1)
-
-        self.botonDescuentos = QPushButton(self.fBTalentoHumano_1)
-        self.botonDescuentos.setObjectName(u"botonDescuentos")
-        sizePolicy2.setHeightForWidth(self.botonDescuentos.sizePolicy().hasHeightForWidth())
-        self.botonDescuentos.setSizePolicy(sizePolicy2)
-        self.botonDescuentos.setMinimumSize(QSize(156, 0))
-        icon5 = QIcon()
-        icon5.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/income.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonDescuentos.setIcon(icon5)
-        self.botonDescuentos.setCheckable(False)
-        self.botonDescuentos.setAutoExclusive(False)
-
-        self.gridLayout_4.addWidget(self.botonDescuentos, 0, 0, 1, 1)
+        self.gridLayout_4.addWidget(self.frame_2, 5, 0, 1, 1)
 
 
         self.horizontalLayout.addWidget(self.fBTalentoHumano_1)
@@ -347,25 +324,13 @@ class Ui_MainWindow(object):
         palette3.setBrush(QPalette.Disabled, QPalette.Base, brush12)
         palette3.setBrush(QPalette.Disabled, QPalette.Window, brush12)
         self.fVTablasTalentoHumano_1.setPalette(palette3)
-        self.fVTablasTalentoHumano_1.setStyleSheet(u"QFrame {\n"
-"    border: 1px solid #26001B;\n"
-"    border-radius: 6px;\n"
-"    padding: 6px;\n"
-"    background-color: #26001B;\n"
-"}\n"
-"\n"
-"QFrame::title {\n"
-"    color: white;\n"
-"    font-size: 18px;\n"
-"    padding: 5px;\n"
-"}\n"
-"")
+
         self.fVTablasTalentoHumano_1.setFrameShape(QFrame.StyledPanel)
         self.fVTablasTalentoHumano_1.setFrameShadow(QFrame.Raised)
 
         self.horizontalLayout.addWidget(self.fVTablasTalentoHumano_1)
 
-        self.tabWidget.addTab(self.tabTalentoHumano, icon3, "")
+        self.tabWidget.addTab(self.tabTalentoHumano, icon2, "")
         self.tabVentas = QWidget()
         self.tabVentas.setObjectName(u"tabVentas")
         self.hwVentas_1 = QWidget(self.tabVentas)
@@ -430,28 +395,14 @@ class Ui_MainWindow(object):
         self.fBTalentoHumano_2.setFrameShadow(QFrame.Raised)
         self.gridLayout_6 = QGridLayout(self.fBTalentoHumano_2)
         self.gridLayout_6.setObjectName(u"gridLayout_6")
-        self.botonClientes = QPushButton(self.fBTalentoHumano_2)
-        self.botonClientes.setObjectName(u"botonClientes")
-        sizePolicy2.setHeightForWidth(self.botonClientes.sizePolicy().hasHeightForWidth())
-        self.botonClientes.setSizePolicy(sizePolicy2)
-        self.botonClientes.setMinimumSize(QSize(156, 0))
-        icon6 = QIcon()
-        icon6.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/account.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonClientes.setIcon(icon6)
-        self.botonClientes.setCheckable(False)
-        self.botonClientes.setChecked(False)
-        self.botonClientes.setAutoExclusive(False)
-
-        self.gridLayout_6.addWidget(self.botonClientes, 0, 0, 1, 1)
-
         self.botonFACTxDETAILS = QPushButton(self.fBTalentoHumano_2)
         self.botonFACTxDETAILS.setObjectName(u"botonFACTxDETAILS")
         sizePolicy2.setHeightForWidth(self.botonFACTxDETAILS.sizePolicy().hasHeightForWidth())
         self.botonFACTxDETAILS.setSizePolicy(sizePolicy2)
         self.botonFACTxDETAILS.setMinimumSize(QSize(156, 0))
-        icon7 = QIcon()
-        icon7.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/invoice.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonFACTxDETAILS.setIcon(icon7)
+        icon4 = QIcon()
+        icon4.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/invoice.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonFACTxDETAILS.setIcon(icon4)
         self.botonFACTxDETAILS.setCheckable(False)
         self.botonFACTxDETAILS.setAutoExclusive(False)
 
@@ -462,13 +413,27 @@ class Ui_MainWindow(object):
         sizePolicy2.setHeightForWidth(self.botonProductos.sizePolicy().hasHeightForWidth())
         self.botonProductos.setSizePolicy(sizePolicy2)
         self.botonProductos.setMinimumSize(QSize(156, 0))
-        icon8 = QIcon()
-        icon8.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/order.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonProductos.setIcon(icon8)
+        icon5 = QIcon()
+        icon5.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/order.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonProductos.setIcon(icon5)
         self.botonProductos.setCheckable(False)
         self.botonProductos.setAutoExclusive(False)
 
         self.gridLayout_6.addWidget(self.botonProductos, 2, 0, 1, 1)
+
+        self.botonClientes = QPushButton(self.fBTalentoHumano_2)
+        self.botonClientes.setObjectName(u"botonClientes")
+        sizePolicy2.setHeightForWidth(self.botonClientes.sizePolicy().hasHeightForWidth())
+        self.botonClientes.setSizePolicy(sizePolicy2)
+        self.botonClientes.setMinimumSize(QSize(156, 0))
+        icon6 = QIcon()
+        icon6.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/account.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonClientes.setIcon(icon6)
+        self.botonClientes.setCheckable(False)
+        self.botonClientes.setChecked(False)
+        self.botonClientes.setAutoExclusive(False)
+
+        self.gridLayout_6.addWidget(self.botonClientes, 0, 0, 1, 1)
 
         self.frame = QFrame(self.fBTalentoHumano_2)
         self.frame.setObjectName(u"frame")
@@ -500,27 +465,27 @@ class Ui_MainWindow(object):
         palette6.setBrush(QPalette.Disabled, QPalette.Base, brush12)
         palette6.setBrush(QPalette.Disabled, QPalette.Window, brush12)
         self.fVTablasVentas_1.setPalette(palette6)
-        self.fVTablasVentas_1.setStyleSheet(u"QFrame {\n"
+        self.fVTablasVentas_1.setStyleSheet(u"/* Estilo para el QFrame padre */\n"
+"QFrame#fVTablasVentas_1 {\n"
 "    border: 1px solid #26001B;\n"
 "    border-radius: 6px;\n"
 "    padding: 6px;\n"
 "    background-color: #26001B;\n"
 "}\n"
 "\n"
-"QFrame::title {\n"
+"QFrame#fVTablasVentas_1::title {\n"
 "    color: white;\n"
 "    font-size: 18px;\n"
 "    padding: 5px;\n"
-"}\n"
-"")
+"}")
         self.fVTablasVentas_1.setFrameShape(QFrame.StyledPanel)
         self.fVTablasVentas_1.setFrameShadow(QFrame.Raised)
 
         self.horizontalLayout_3.addWidget(self.fVTablasVentas_1)
 
-        icon9 = QIcon()
-        icon9.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/bill.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.tabWidget.addTab(self.tabVentas, icon9, "")
+        icon7 = QIcon()
+        icon7.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/bill.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.tabWidget.addTab(self.tabVentas, icon7, "")
         self.tabIniciarSesion = QWidget()
         self.tabIniciarSesion.setObjectName(u"tabIniciarSesion")
         sizePolicy2.setHeightForWidth(self.tabIniciarSesion.sizePolicy().hasHeightForWidth())
@@ -541,13 +506,13 @@ class Ui_MainWindow(object):
         self.vWIniciarSesion_1.setGeometry(QRect(500, 210, 681, 181))
         self.verticalLayout_3 = QVBoxLayout(self.vWIniciarSesion_1)
         self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.widget = QWidget(self.tabIniciarSesion)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(440, 210, 659, 159))
-        self.vWIniciarSesion_2 = QVBoxLayout(self.widget)
+        self.layoutWidget = QWidget(self.tabIniciarSesion)
+        self.layoutWidget.setObjectName(u"layoutWidget")
+        self.layoutWidget.setGeometry(QRect(440, 210, 659, 170))
+        self.vWIniciarSesion_2 = QVBoxLayout(self.layoutWidget)
         self.vWIniciarSesion_2.setObjectName(u"vWIniciarSesion_2")
         self.vWIniciarSesion_2.setContentsMargins(0, 0, 0, 0)
-        self.labelIniciarSesion_1 = QLabel(self.widget)
+        self.labelIniciarSesion_1 = QLabel(self.layoutWidget)
         self.labelIniciarSesion_1.setObjectName(u"labelIniciarSesion_1")
         sizePolicy2.setHeightForWidth(self.labelIniciarSesion_1.sizePolicy().hasHeightForWidth())
         self.labelIniciarSesion_1.setSizePolicy(sizePolicy2)
@@ -579,46 +544,7 @@ class Ui_MainWindow(object):
 
         self.gLIniciarSesion_1 = QGridLayout()
         self.gLIniciarSesion_1.setObjectName(u"gLIniciarSesion_1")
-        self.entryUsuario_1 = QLineEdit(self.widget)
-        self.entryUsuario_1.setObjectName(u"entryUsuario_1")
-        self.entryUsuario_1.setAlignment(Qt.AlignCenter)
-
-        self.gLIniciarSesion_1.addWidget(self.entryUsuario_1, 1, 1, 1, 1)
-
-        self.entryClave_1 = QLineEdit(self.widget)
-        self.entryClave_1.setObjectName(u"entryClave_1")
-        self.entryClave_1.setAlignment(Qt.AlignCenter)
-
-        self.gLIniciarSesion_1.addWidget(self.entryClave_1, 2, 1, 1, 1)
-
-        self.labelUsuario_1 = QLabel(self.widget)
-        self.labelUsuario_1.setObjectName(u"labelUsuario_1")
-        self.labelUsuario_1.setStyleSheet(u"QLabel {\n"
-"    color: palette(window-text);\n"
-"    font-size: 14px;\n"
-"    padding: 2px;\n"
-"    border: 1px solid #888888;\n"
-"    border-radius: 5px;\n"
-"    background-color: palette(window);\n"
-"}\n"
-"\n"
-"QLineEdit {\n"
-"    border: 1px solid #888888;\n"
-"    border-radius: 5px;\n"
-"    padding: 5px;\n"
-"    background-color: palette(base);\n"
-"    color: palette(text);\n"
-"}\n"
-"\n"
-"QLineEdit:focus {\n"
-"    border: 1px solid #555555;\n"
-"}\n"
-"")
-        self.labelUsuario_1.setAlignment(Qt.AlignCenter)
-
-        self.gLIniciarSesion_1.addWidget(self.labelUsuario_1, 1, 0, 1, 1)
-
-        self.labelClave_1 = QLabel(self.widget)
+        self.labelClave_1 = QLabel(self.layoutWidget)
         self.labelClave_1.setObjectName(u"labelClave_1")
         self.labelClave_1.setStyleSheet(u"QLabel {\n"
 "    color: palette(window-text);\n"
@@ -645,33 +571,75 @@ class Ui_MainWindow(object):
 
         self.gLIniciarSesion_1.addWidget(self.labelClave_1, 2, 0, 1, 1)
 
+        self.entryUsuario_1 = QLineEdit(self.layoutWidget)
+        self.entryUsuario_1.setObjectName(u"entryUsuario_1")
+        self.entryUsuario_1.setAlignment(Qt.AlignCenter)
+
+        self.gLIniciarSesion_1.addWidget(self.entryUsuario_1, 1, 1, 1, 1)
+
+        self.labelUsuario_1 = QLabel(self.layoutWidget)
+        self.labelUsuario_1.setObjectName(u"labelUsuario_1")
+        self.labelUsuario_1.setStyleSheet(u"QLabel {\n"
+"    color: palette(window-text);\n"
+"    font-size: 14px;\n"
+"    padding: 2px;\n"
+"    border: 1px solid #888888;\n"
+"    border-radius: 5px;\n"
+"    background-color: palette(window);\n"
+"}\n"
+"\n"
+"QLineEdit {\n"
+"    border: 1px solid #888888;\n"
+"    border-radius: 5px;\n"
+"    padding: 5px;\n"
+"    background-color: palette(base);\n"
+"    color: palette(text);\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 1px solid #555555;\n"
+"}\n"
+"")
+        self.labelUsuario_1.setAlignment(Qt.AlignCenter)
+
+        self.gLIniciarSesion_1.addWidget(self.labelUsuario_1, 1, 0, 1, 1)
+
+        self.entryClave_1 = QLineEdit(self.layoutWidget)
+        self.entryClave_1.setObjectName(u"entryClave_1")
+        self.entryClave_1.setAlignment(Qt.AlignCenter)
+
+        self.gLIniciarSesion_1.addWidget(self.entryClave_1, 2, 1, 1, 1)
+
 
         self.vWIniciarSesion_2.addLayout(self.gLIniciarSesion_1)
 
         self.hLIniciarSesion_1 = QHBoxLayout()
         self.hLIniciarSesion_1.setObjectName(u"hLIniciarSesion_1")
-        self.botonCerrarSesion_1 = QPushButton(self.widget)
+        self.botonCerrarSesion_1 = QPushButton(self.layoutWidget)
         self.botonCerrarSesion_1.setObjectName(u"botonCerrarSesion_1")
-        icon10 = QIcon()
-        icon10.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/cancel.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonCerrarSesion_1.setIcon(icon10)
+        icon8 = QIcon()
+        icon8.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/cancel.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonCerrarSesion_1.setIcon(icon8)
 
         self.hLIniciarSesion_1.addWidget(self.botonCerrarSesion_1)
 
-        self.botonIniciarSesion_1 = QPushButton(self.widget)
+        self.botonIniciarSesion_1 = QPushButton(self.layoutWidget)
         self.botonIniciarSesion_1.setObjectName(u"botonIniciarSesion_1")
-        icon11 = QIcon()
-        icon11.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/enter.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.botonIniciarSesion_1.setIcon(icon11)
+        icon9 = QIcon()
+        icon9.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/enter.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.botonIniciarSesion_1.setIcon(icon9)
 
         self.hLIniciarSesion_1.addWidget(self.botonIniciarSesion_1)
 
 
         self.vWIniciarSesion_2.addLayout(self.hLIniciarSesion_1)
 
-        icon12 = QIcon()
-        icon12.addFile(u"C:/Users/Carlos/Desktop/Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/key.png", QSize(), QIcon.Normal, QIcon.Off)
-        self.tabWidget.addTab(self.tabIniciarSesion, icon12, "")
+        icon10 = QIcon()
+        icon10.addFile(u"../Universidad/4to Semestre/Bases de Datos 1/Unidad 4/Proyectos/Python/EmpleadosExoneracion/Imagenes/iconos/key.png", QSize(), QIcon.Normal, QIcon.Off)
+        self.tabWidget.addTab(self.tabIniciarSesion, icon10, "")
+        self.ManejoArchivos = QWidget()
+        self.ManejoArchivos.setObjectName(u"ManejoArchivos")
+        self.tabWidget.addTab(self.ManejoArchivos, "")
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -684,21 +652,21 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.botonDetalle.setText(QCoreApplication.translate("MainWindow", u"DETALLE", None))
-        self.botonBonxDes.setText(QCoreApplication.translate("MainWindow", u"BONXDES", None))
-        self.botonRolPagos.setText(QCoreApplication.translate("MainWindow", u"ROL PAGOS", None))
-        self.botonEmpleados.setText(QCoreApplication.translate("MainWindow", u"EMPLEADOS", None))
+        self.botonNomina.setText(QCoreApplication.translate("MainWindow", u"NOMINA", None))
         self.botonBonificaciones.setText(QCoreApplication.translate("MainWindow", u"BONIFICACION", None))
+        self.botonEmpleados.setText(QCoreApplication.translate("MainWindow", u"EMPLEADOS", None))
         self.botonDescuentos.setText(QCoreApplication.translate("MainWindow", u"DESCUENTOS", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabTalentoHumano), QCoreApplication.translate("MainWindow", u"TALENTO HUMANO", None))
-        self.botonClientes.setText(QCoreApplication.translate("MainWindow", u"CLIENTES", None))
         self.botonFACTxDETAILS.setText(QCoreApplication.translate("MainWindow", u"FACTxDETAILS", None))
         self.botonProductos.setText(QCoreApplication.translate("MainWindow", u"PRODUCTOS", None))
+        self.botonClientes.setText(QCoreApplication.translate("MainWindow", u"CLIENTES", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabVentas), QCoreApplication.translate("MainWindow", u"VENTAS", None))
         self.labelIniciarSesion_1.setText(QCoreApplication.translate("MainWindow", u"Iniciar sesion en tu usuario", None))
-        self.labelUsuario_1.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.labelClave_1.setText(QCoreApplication.translate("MainWindow", u"Clave", None))
+        self.labelUsuario_1.setText(QCoreApplication.translate("MainWindow", u"Usuario", None))
         self.botonCerrarSesion_1.setText(QCoreApplication.translate("MainWindow", u"Cerrar Sesion", None))
         self.botonIniciarSesion_1.setText(QCoreApplication.translate("MainWindow", u"Iniciar Sesion", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabIniciarSesion), QCoreApplication.translate("MainWindow", u"INICIAR SESION", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.ManejoArchivos), QCoreApplication.translate("MainWindow", u"Utileria", None))
     # retranslateUi
+

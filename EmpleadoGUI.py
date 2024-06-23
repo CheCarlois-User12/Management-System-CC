@@ -3,18 +3,19 @@ import functools
 import os
 import json
 import re
-from PySide6.QtWidgets import (QApplication, QMainWindow, QWidget, QFormLayout, QLineEdit, QPushButton,
+from PySide6.QtWidgets import (QApplication, QWidget, QFormLayout, QLineEdit, QPushButton,
                                QVBoxLayout, QMessageBox, QComboBox, QDateEdit, QTableWidget, QTableWidgetItem,
-                               QHeaderView, QFileDialog, QLabel, QHBoxLayout, QGridLayout, QTabWidget)
+                               QHeaderView, QFileDialog, QLabel, QHBoxLayout, QGridLayout)
 from PySide6.QtCore import QDate, Qt
-from PySide6.QtGui import QPixmap
+from PySide6.QtGui import QPixmap, QIcon
 from Empleado import Empleado
 from EmpleadoDAO import EmpleadoDAO
 
-PHOTO_DIR = r'C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion\Imagenes'
-PHOTO_PATH_FILE = os.path.join(PHOTO_DIR, 'photo_paths.json')
+PHOTO_DIR = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\imagenes_Empleados'
+PHOTO_PATH_FILE = os.path.join(PHOTO_DIR, 'photo_paths_empleados.json')
 DEFAULT_PHOTO = os.path.join(PHOTO_DIR, 'desconocido.jpg')
-
+PENCIL_ICON_PATH = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\Imagenes\iconos\pencil.png'
+CANCEL_ICON_PATH = r'C:\Users\Carlos\Desktop\EmpleadosManagmentSystem\Imagenes\iconos\cancel.png'
 
 class EmpleadoGUI(QWidget):
     def __init__(self):
@@ -42,21 +43,24 @@ class EmpleadoGUI(QWidget):
 
     def create_entries(self):
         text_fields = [
-            ("EmpCodigo", "Código del Empleado", 14),
+            ("EmpCodigo", "Código del Empleado", 7),
             ("EmpApellido1", "Apellido del Empleado 1", 30),
             ("EmpApellido2", "Apellido del Empleado 2", 30),
             ("EmpNombre1", "Nombre del Empleado 1", 30),
             ("EmpNombre2", "Nombre del Empleado 2", 30),
-            ("EmpEmail", "Email", 30),
-            ("EmpDireccion", "Dirección", 30),
+            ("EmpIdentificacion", "Identificación", 13),
+            ("EmpEmail", "Email", 60),
+            ("EmpDireccion", "Dirección", 60),
             ("EmpSueldo", "Sueldo", 10),
             ("EmpBanco", "Banco", 30),
             ("EmpCuenta", "Cuenta Bancaria", 20),
+            ("EmpCargo", "Cargo", 50)
         ]
 
         for label, placeholder, char_width in text_fields:
             entry = QLineEdit()
             entry.setPlaceholderText(placeholder)
+            entry.setMaxLength(char_width)
             entry.setFixedWidth(char_width * 10)
             self.form_layout.addRow(label, entry)
             self.entries[label] = entry
@@ -109,11 +113,11 @@ class EmpleadoGUI(QWidget):
 
     def create_table(self):
         self.table = QTableWidget()
-        self.table.setColumnCount(17)
+        self.table.setColumnCount(18)
         self.table.setHorizontalHeaderLabels([
             "Código", "Apellido1", "Apellido2", "Nombre1", "Nombre2",
-            "Fecha Nacimiento", "Sexo", "Email", "Dirección", "Tipo de Sangre",
-            "Sueldo", "Banco", "Cuenta", "Estado", "Foto", "Editar", "Eliminar"
+            "Identificación", "Fecha Nacimiento", "Tipo de Sangre", "Sexo", "Cargo",
+            "Email", "Dirección", "Sueldo", "Banco", "Cuenta", "Estado", "Editar", "Eliminar"
         ])
         self.table.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         self.table_layout.addWidget(self.table)
@@ -127,41 +131,30 @@ class EmpleadoGUI(QWidget):
             self.photo_label.setPixmap(pixmap.scaled(self.photo_label.size(), Qt.KeepAspectRatio, Qt.SmoothTransformation))
 
     def limpiar_campos(self):
-        """
-        Limpia todos los campos de entrada.
-        """
-        self.entries["EmpCodigo"].clear()
-        self.entries["EmpApellido1"].clear()
-        self.entries["EmpApellido2"].clear()
-        self.entries["EmpNombre1"].clear()
-        self.entries["EmpNombre2"].clear()
-        self.entries["EmpEmail"].clear()
-        self.entries["EmpDireccion"].clear()
-        self.entries["EmpSueldo"].clear()
-        self.entries["EmpBanco"].clear()
-        self.entries["EmpCuenta"].clear()
-        self.entries["EmpFechaNacimiento"].setDate(QDate.currentDate())
-        self.entries["EmpSexo"].setCurrentIndex(0)
-        self.entries["EmpTipoSangre"].setCurrentIndex(0)
-        self.entries["EmpStatus"].setCurrentIndex(0)
+        for entry in self.entries.values():
+            if isinstance(entry, QLineEdit):
+                entry.clear()
+            elif isinstance(entry, QComboBox):
+                entry.setCurrentIndex(0)
+            elif isinstance(entry, QDateEdit):
+                entry.setDate(QDate.currentDate())
         self.photo_label.clear()
         self.photo_label.setStyleSheet("border: 1px solid black;")
         self.photo_path = None
 
     def actualizar_campos_empleado(self, empleado):
-        """
-        Actualiza los campos de entrada con los datos del empleado.
-        """
         self.entries["EmpCodigo"].setText(empleado.emp_codigo.rstrip())
         self.entries["EmpApellido1"].setText(empleado.emp_apellido1.rstrip())
         self.entries["EmpApellido2"].setText(empleado.emp_apellido2.rstrip())
         self.entries["EmpNombre1"].setText(empleado.emp_nombre1.rstrip())
         self.entries["EmpNombre2"].setText(empleado.emp_nombre2.rstrip())
+        self.entries["EmpIdentificacion"].setText(empleado.emp_identificacion.rstrip())
         self.entries["EmpEmail"].setText(empleado.emp_email.rstrip())
         self.entries["EmpDireccion"].setText(empleado.emp_direccion.rstrip())
         self.entries["EmpSueldo"].setText(str(empleado.emp_sueldo).rstrip())
         self.entries["EmpBanco"].setText(empleado.emp_banco.rstrip())
         self.entries["EmpCuenta"].setText(empleado.emp_cuenta.rstrip())
+        self.entries["EmpCargo"].setText(empleado.emp_cargo.rstrip())
 
         # Convert the date from string to QDate
         fecha_nacimiento_str = empleado.emp_fecha_nacimiento.strftime("%Y-%m-%d")
@@ -180,23 +173,6 @@ class EmpleadoGUI(QWidget):
 
     def guardar_empleado(self):
         emp_codigo = self.entries["EmpCodigo"].text()
-        emp_cuenta = self.entries["EmpCuenta"].text()
-
-        # Verificar formato de EmpCodigo
-        if not re.match(r"^EMP-\d{3}$", emp_codigo):
-            QMessageBox.warning(self, "Advertencia", "El formato del código de empleado debe ser 'EMP-###'")
-            return
-
-        # Verificar formato de EmpCuenta
-        if not re.match(r"^CUE-\d{1}\d{5}\d{5}\d{5}$", emp_cuenta):
-            QMessageBox.warning(self, "Advertencia", "El formato de la cuenta bancaria debe ser 'CUE-################'")
-            return
-
-        # Verificar que el sueldo no sea negativo
-        emp_sueldo = float(self.entries["EmpSueldo"].text())
-        if emp_sueldo < 0:
-            QMessageBox.warning(self, "Advertencia", "El sueldo no puede ser negativo")
-            return
 
         empleados = EmpleadoDAO.seleccionar()
         emp_existente = any(emp.emp_codigo == emp_codigo for emp in empleados)
@@ -207,12 +183,14 @@ class EmpleadoGUI(QWidget):
                 emp_apellido2=self.entries["EmpApellido2"].text(),
                 emp_nombre1=self.entries["EmpNombre1"].text(),
                 emp_nombre2=self.entries["EmpNombre2"].text(),
+                emp_identificacion=self.entries["EmpIdentificacion"].text(),
                 emp_fecha_nacimiento=self.entries["EmpFechaNacimiento"].date().toString("yyyy-MM-dd"),
+                emp_tipo_sangre=self.entries["EmpTipoSangre"].currentText(),
                 emp_sexo=self.entries["EmpSexo"].currentText(),
+                emp_cargo=self.entries["EmpCargo"].text(),
                 emp_email=self.entries["EmpEmail"].text(),
                 emp_direccion=self.entries["EmpDireccion"].text(),
-                emp_tipo_sangre=self.entries["EmpTipoSangre"].currentText(),
-                emp_sueldo=emp_sueldo,
+                emp_sueldo=float(self.entries["EmpSueldo"].text()),
                 emp_banco=self.entries["EmpBanco"].text(),
                 emp_cuenta=self.entries["EmpCuenta"].text(),
                 emp_status=self.entries["EmpStatus"].currentText()
@@ -256,32 +234,32 @@ class EmpleadoGUI(QWidget):
             self.table.setItem(row, 2, QTableWidgetItem(empleado.emp_apellido2))
             self.table.setItem(row, 3, QTableWidgetItem(empleado.emp_nombre1))
             self.table.setItem(row, 4, QTableWidgetItem(empleado.emp_nombre2))
-            self.table.setItem(row, 5, QTableWidgetItem(str(empleado.emp_fecha_nacimiento)))
-            self.table.setItem(row, 6, QTableWidgetItem(empleado.emp_sexo))
-            self.table.setItem(row, 7, QTableWidgetItem(empleado.emp_email))
-            self.table.setItem(row, 8, QTableWidgetItem(empleado.emp_direccion))
-            self.table.setItem(row, 9, QTableWidgetItem(empleado.emp_tipo_sangre))
-            self.table.setItem(row, 10, QTableWidgetItem(str(empleado.emp_sueldo)))
-            self.table.setItem(row, 11, QTableWidgetItem(empleado.emp_banco))
-            self.table.setItem(row, 12, QTableWidgetItem(empleado.emp_cuenta))
-            self.table.setItem(row, 13, QTableWidgetItem(empleado.emp_status))
-
-            foto_path = self.cargar_foto_path(empleado.emp_codigo) or DEFAULT_PHOTO
-            if not os.path.exists(foto_path):
-                foto_path = DEFAULT_PHOTO
+            self.table.setItem(row, 5, QTableWidgetItem(empleado.emp_identificacion))
+            self.table.setItem(row, 6, QTableWidgetItem(str(empleado.emp_fecha_nacimiento)))
+            self.table.setItem(row, 7, QTableWidgetItem(empleado.emp_tipo_sangre))
+            self.table.setItem(row, 8, QTableWidgetItem(empleado.emp_sexo))
+            self.table.setItem(row, 9, QTableWidgetItem(empleado.emp_cargo))
+            self.table.setItem(row, 10, QTableWidgetItem(empleado.emp_email))
+            self.table.setItem(row, 11, QTableWidgetItem(empleado.emp_direccion))
+            self.table.setItem(row, 12, QTableWidgetItem(str(empleado.emp_sueldo)))
+            self.table.setItem(row, 13, QTableWidgetItem(empleado.emp_banco))
+            self.table.setItem(row, 14, QTableWidgetItem(empleado.emp_cuenta))
+            self.table.setItem(row, 15, QTableWidgetItem(empleado.emp_status))
 
             label = QLabel()
-            pixmap = QPixmap(foto_path)
+            pixmap = QPixmap(self.cargar_foto_path(empleado.emp_codigo) or DEFAULT_PHOTO)
             label.setPixmap(pixmap.scaled(50, 50, Qt.KeepAspectRatio, Qt.SmoothTransformation))
-            self.table.setCellWidget(row, 14, label)
+            self.table.setCellWidget(row, 16, label)
 
-            edit_button = QPushButton("Editar")
+            edit_button = QPushButton()
+            edit_button.setIcon(QIcon(PENCIL_ICON_PATH))
             edit_button.clicked.connect(functools.partial(self.editar_empleado, row))
-            self.table.setCellWidget(row, 15, edit_button)
+            self.table.setCellWidget(row, 17, edit_button)
 
-            delete_button = QPushButton("Eliminar")
+            delete_button = QPushButton()
+            delete_button.setIcon(QIcon(CANCEL_ICON_PATH))
             delete_button.clicked.connect(functools.partial(self.eliminar_empleado_desde_tabla, row))
-            self.table.setCellWidget(row, 16, delete_button)
+            self.table.setCellWidget(row, 18, delete_button)
 
     def eliminar_empleado_desde_tabla(self, row):
         emp_codigo = self.table.item(row, 0).text()
@@ -317,13 +295,6 @@ class EmpleadoGUI(QWidget):
     def save_photo_data(self, data):
         with open(PHOTO_PATH_FILE, 'w') as file:
             json.dump(data, file)
-
-    def load_photo_path(self, emp_codigo):
-        photo_path = self.cargar_foto_path(emp_codigo)
-        if photo_path and os.path.exists(photo_path) and photo_path != 'NULL':
-            return photo_path
-        return DEFAULT_PHOTO
-
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
