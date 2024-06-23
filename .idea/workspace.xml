@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9f8199de-2686-49b8-b761-f79fbf594ca0" name="Changes" comment="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/EmpleadosExoneracion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EmpleadosExoneracion.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Empleado.py" beforeDir="false" afterPath="$PROJECT_DIR$/Empleado.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpleadoDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpleadoDAO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EmpleadoGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/EmpleadoGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacturaMasterGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/FacturaMasterGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FacturasMasterForm.py" beforeDir="false" afterPath="$PROJECT_DIR$/FacturasMasterForm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/Bonificacion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/BonificacionDAO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/BonificacionGUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonificacionPaquete/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/Bonxdesxo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/BonxdesxoDAO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/BonxdesxoGUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bonxdesxoPaquete/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capa_datos.log" beforeDir="false" afterPath="$PROJECT_DIR$/capa_datos.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conexion.py" beforeDir="false" afterPath="$PROJECT_DIR$/conexion.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/descuentosPaquete/Descuento.py" beforeDir="false" afterPath="$PROJECT_DIR$/Descuento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/descuentosPaquete/DescuentoDAO.py" beforeDir="false" afterPath="$PROJECT_DIR$/DescuentoDAO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/descuentosPaquete/DescuentoGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/DescuentoGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/descuentosPaquete/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detallePaquete/Detalle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detallePaquete/DetalleDAO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detallePaquete/DetalleGUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detallePaquete/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/form_ui.py" beforeDir="false" afterPath="$PROJECT_DIR$/form_ui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/RolPagos.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/RolPagosDAO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/RolPagosGUI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rolPagosPaquete/__init__.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" show_ignored="true">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CheCarlois-User12&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CheCarlois-User12/Management-System-CC.git&quot;,
+    &quot;accountId&quot;: &quot;845033f3-5692-426b-b2bd-99a98bf21601&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2hQGjnO8rHbepRPVFg5tIdXlyWL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.BonxdesxoGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ClienteDAO.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ClienteGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.DetalleGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Empleado.executor&quot;: &quot;Run&quot;,
+    &quot;Python.EmpleadoGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.FacturaMasterGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MainWindow.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ProductoGUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.RSAProteccion.executor&quot;: &quot;Run&quot;,
+    &quot;Python.conexion.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Carlos/Desktop/EmpleadosManagmentSystem&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion\EmpleadoPackage\Images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion" />
+      <recent name="C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion\EmpleadoPackage" />
+      <recent name="C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion\DescuentoPackage" />
+      <recent name="C:\Users\Carlos\Desktop\Universidad\4to Semestre\Bases de Datos 1\Unidad 4\Proyectos\Python\EmpleadosExoneracion\BonificacionPackage" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.MainWindow">
+    <configuration name="ClienteGUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmpleadosExoneracion" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ClienteGUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FacturaMasterGUI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmpleadosExoneracion" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FacturaMasterGUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MainWindow" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmpleadosExoneracion" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MainWindow.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="RSAProteccion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmpleadosExoneracion" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RSAProteccion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="conexion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="EmpleadosExoneracion" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/conexion.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.MainWindow" />
+        <item itemvalue="Python.RSAProteccion" />
+        <item itemvalue="Python.conexion" />
+        <item itemvalue="Python.FacturaMasterGUI" />
+        <item itemvalue="Python.ClienteGUI" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.17011.127" />
+        <option value="bundled-python-sdk-48aec45f0201-7e9c3bbb6e34-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.17011.127" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9f8199de-2686-49b8-b761-f79fbf594ca0" name="Changes" comment="" />
+      <created>1717519025474</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717519025474</updated>
+      <workItem from="1717519030857" duration="2190000" />
+      <workItem from="1717525232292" duration="545000" />
+      <workItem from="1717525790292" duration="524000" />
+      <workItem from="1717526329134" duration="6352000" />
+      <workItem from="1717536519944" duration="702000" />
+      <workItem from="1717537237922" duration="1155000" />
+      <workItem from="1717540831473" duration="3000" />
+      <workItem from="1717546652562" duration="1859000" />
+      <workItem from="1717559165416" duration="3999000" />
+      <workItem from="1717563360910" duration="3269000" />
+      <workItem from="1717594161762" duration="7906000" />
+      <workItem from="1717611710302" duration="58000" />
+      <workItem from="1717613891056" duration="2698000" />
+      <workItem from="1717617824188" duration="1505000" />
+      <workItem from="1717622687894" duration="5159000" />
+      <workItem from="1717628036435" duration="225000" />
+      <workItem from="1717638441962" duration="329000" />
+      <workItem from="1717647982875" duration="656000" />
+      <workItem from="1717674541544" duration="105000" />
+      <workItem from="1717674694511" duration="88000" />
+      <workItem from="1717674962854" duration="55000" />
+      <workItem from="1717675029687" duration="19000" />
+      <workItem from="1717675101820" duration="1007000" />
+      <workItem from="1717690634841" duration="5000" />
+      <workItem from="1717691099954" duration="33000" />
+      <workItem from="1717697550510" duration="1504000" />
+      <workItem from="1717712780982" duration="28000" />
+      <workItem from="1717719590966" duration="234000" />
+      <workItem from="1717874073986" duration="49000" />
+      <workItem from="1717874158665" duration="28000" />
+      <workItem from="1718148215144" duration="40000" />
+      <workItem from="1718462829482" duration="422000" />
+      <workItem from="1718464880928" duration="8439000" />
+      <workItem from="1718473388645" duration="437000" />
+      <workItem from="1718473911433" duration="78000" />
+      <workItem from="1718974430357" duration="60000" />
+      <workItem from="1718974498967" duration="2019000" />
+    </task>
+    <task id="LOCAL-00001" summary="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado">
+      <option name="closed" value="true" />
+      <created>1718473666905</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718473666905</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se agregaron los siguientes cambios:&#10;** Modulo de ventas&#10;** Interfaz dinamica con QT, escalable y modificable en cascada&#10;  - Interfaces con imagenes&#10;  - Roles designados acorde al diseño de la BD a los modulos&#10;** Modulo de Encriptación RSA&#10;&#10;** Manejo de errores mejorado" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$ClienteGUI.coverage" NAME="ClienteGUI Coverage Results" MODIFIED="1718470081654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$RSAProteccion.coverage" NAME="RSAProteccion Coverage Results" MODIFIED="1718472636432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosExoneracion$BonxdesxoGUI.coverage" NAME="BonxdesxoGUI Coverage Results" MODIFIED="1717624436722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$ProductoGUI.coverage" NAME="ProductoGUI Coverage Results" MODIFIED="1718469235808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosExoneracion$DetalleGUI.coverage" NAME="DetalleGUI Coverage Results" MODIFIED="1717624569345" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosExoneracion$EmpleadoGUI.coverage" NAME="EmpleadoGUI Coverage Results" MODIFIED="1717628161253" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$ClienteDAO.coverage" NAME="ClienteDAO Coverage Results" MODIFIED="1718470075540" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosExoneracion$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1717674591532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$conexion.coverage" NAME="conexion Coverage Results" MODIFIED="1718471928721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosExoneracion$conexion.coverage" NAME="conexion Coverage Results" MODIFIED="1717618218972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$MainWindow.coverage" NAME="MainWindow Coverage Results" MODIFIED="1718979793866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosExoneracion$Empleado.coverage" NAME="Empleado Coverage Results" MODIFIED="1717600430491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$FacturaMasterGUI.coverage" NAME="FacturaMasterGUI Coverage Results" MODIFIED="1718470157982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/EmpleadosManagmentSystem$EmpleadoGUI.coverage" NAME="EmpleadoGUI Coverage Results" MODIFIED="1718469155355" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
